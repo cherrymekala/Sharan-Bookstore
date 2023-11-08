@@ -7,7 +7,7 @@ const flash = require("connect-flash");
 const session = require("express-session");
 const mongoose = require("mongoose");
 
-const dbUrl = process.env.ATLASDB_URL;
+const dbUrl ="mongodb+srv://umarfarooq8226:UMlEK3lL6KjBNYs1@cluster0.o3mgwng.mongodb.net/?retryWrites=true&w=majority";
 async function main() {
   await mongoose.connect(dbUrl);
 }
