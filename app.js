@@ -6,9 +6,10 @@ const methodOverride = require("method-override");
 const flash = require("connect-flash");
 const session = require("express-session");
 const mongoose = require("mongoose");
-const Mongo_URL = "mongodb://127.0.0.1:27017/books";
+
+const dbUrl = process.env.ATLASDB_URL;
 async function main() {
-  await mongoose.connect(Mongo_URL);
+  await mongoose.connect(dbUrl);
 }
 main();
 
