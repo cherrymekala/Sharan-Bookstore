@@ -1,0 +1,25 @@
+<% layout("/layouts/boilerplate")%>
+<div class="row">
+  <div class="col-8 offset-2">
+    <h3 class="show-h3 mb-3 mt-3"><%= book.title%></h3>
+  </div>
+  <div class="card col-6 offset-3 show-card">
+    <img class="card-img-top show-img" src="<%=book.image%>" alt="book_image" />
+    <div class="card-body">
+      <p class="card-text m-2">
+        <br />
+        <b>Title:&nbsp;</b><%=book.title%><br />
+        <b>Author: &nbsp;</b> <%=book.author%> <br />
+        <b>Summary:</b>&nbsp;<i><%= book.summary%></i> <br /><br />
+      </p>
+    </div>
+  </div>
+
+  <div class="btns col-6 offset-3 mb-5">
+    <a href="/books/<%=book._id%>/edit" class="btn btn-dark show-edit">Edit</a
+    ><br />
+    <form action="/books/<%=book._id%>/delete?_method=DELETE" method="POST">
+      <button class="btn btn-dark">Delete</button>
+    </form>
+  </div>
+</div>

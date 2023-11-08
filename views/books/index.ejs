@@ -1,0 +1,16 @@
+<%layout("layouts/boilerplate")%>
+<body>
+  <h3 class="mt-3 mb-3 edit-h3">List of Books</h3>
+  <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
+    <% for(let book of allBooks) { %>
+    <a href="/books/<%=book._id%>" class="card-link">
+      <div class="card col mb-3 index-card" >
+        <img src="<%=book.image%>" class="card-img-top mb-2" alt="book_image" />
+        <div class="card-body">
+          <p class="card-text index-card-text"><b><%= book.title%></b></p>
+        </div>
+      </div>
+    </a>
+    <% } %>
+  </div>
+</body>
