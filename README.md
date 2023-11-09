@@ -11,7 +11,8 @@
 
 # Render 
   Project is hosted on <b>Render</b> linking with GitHub.
-  <b>Link:</b> "https://sharan-bookstore.onrender.com/books"
+  <b>Link:</b> "https://sharan-bookstore.onrender.com/books".<br>
+  Database is hosted on Mongo-Atlas
 
 # Instructions to set up and run the application locally
   <b>Installing dependencies :</b> To install dependencies in local machine run "npm install". It install all dependencies required to run the project locally. <br>
